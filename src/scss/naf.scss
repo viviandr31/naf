@@ -45,7 +45,7 @@ body {
     background-color: #D8E8EF;
     color: #006993;
     @media #{$sm} {
-        height: 70px;
+        height: 50px;
     }
     @media #{$md_and_plus} {
         font-weight: 600;
@@ -72,7 +72,7 @@ body {
 
 @media #{$md_and_plus} {
     .navbar-nav li {
-        min-width: 125px;
+        min-width: 80px;
     }
     .navbar-nav li a {
         padding: 30px 15px;
@@ -334,10 +334,29 @@ body {
 
 #checkoutbutton {
     margin: 30px auto 150px;
+    @media #{$xs} {
+        font-size: 1em;
+        padding:10px;
+        line-height: 2;
+    }
 }
 
-.footer p {
-    margin: 30px;
+.footer {
+    p {
+        margin: 30px;
+        @media #{$xs} {
+            margin: 10px;
+        }
+    }
+    .btn-orange {
+        @media #{$xs} {
+            float: center;
+            width:300px;
+            font-size: 0.9em;
+            padding: 10px 30px;
+            line-height: 3;
+        }
+    }
 }
 
 
