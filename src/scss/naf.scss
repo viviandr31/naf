@@ -1,0 +1,379 @@
+$xs: "(max-width : 767px)";
+$sm: "(max-width : 991px) and (min-width: 768px)";
+$md: "(max-width : 1199px) and (min-width: 992px)";
+$lg: "(min-width : 1200px)";
+$md_and_plus: "(min-width: 992px)";
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+/* navigation bar*/
+
+.navbar {
+    background-color: #fff;
+}
+
+.navbar img {
+    height: 40px;
+    margin-top: -10px;
+    @media #{$md_and_plus} {
+        height: 60px;
+    }
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    background-color: #D8E8EF;
+    color: #006993;
+    @media #{$sm} {
+        height: 70px;
+    }
+    @media #{$md_and_plus} {
+        font-weight: 600;
+        height: 80px;
+    }
+}
+
+.navbar .divider-vertical {
+    min-width: 2px;
+    height: 15px;
+    margin: 15px 5px;
+    padding: 10px 0;
+    border-left: 2px solid #a9a9a9;
+    width: 0px;
+    @media #{$xs} {
+        display: none;
+    }
+    @media #{$md_and_plus} {
+        height: 25px;
+        margin: 20px 5px;
+        padding: 20px 0;
+    }
+}
+
+@media #{$md_and_plus} {
+    .navbar-nav li {
+        min-width: 125px;
+    }
+    .navbar-nav li a {
+        padding: 30px 15px;
+        font-size: 1.125em;
+    }
+}
+
+#headerbutton {
+    float: right;
+    padding: 4px 20px;
+    margin: 10px;
+    height: 30px;
+    font-size: 1em;
+    @media #{$md_and_plus} {
+        padding: 18px 50px;
+        margin: 10px;
+        font-size: 1.125em;
+        height: 60px;
+    }
+}
+
+
+/*.container-flag styles*/
+
+.container-flag {
+    background: url("../img/bg1.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    height: 590px;
+    h1 {
+        font-size: 3.75em;
+        margin-top: 115px;
+        @media #{$xs} {
+            font-size: 2.5em;
+            margin-top: 30px;
+        }
+    }
+    h2 {
+        margin-top: 10px;
+        font-size: 1.75em;
+        color: #DDDEDD;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+    .btn {
+        margin-top: 50px;
+    }
+}
+
+.btn-orange {
+    background-color: #E64900;
+    border: 2px solid #E64900;
+    padding: 15px 30px;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0px;
+    margin: 5px;
+    height: 60px;
+}
+
+.btn-transparent {
+    border: 3px solid #E64900;
+    color: #E64900;
+    padding: 15px 25px;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 0px;
+    margin: 5px;
+    height: 60px;
+}
+
+.btn-blue {
+    background-color: #006993;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0px;
+    padding: 10px 40px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    height: 60px;
+}
+
+.arrow {
+    width: 0px;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #E64900;
+    float: right;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+@-moz-document url-prefix() {
+    .arrow {
+        margin: -25px 0px 0px 30px;
+    }
+}
+
+.container-fluid.gray-bar {
+    background-color: #DDDEDD;
+    height: 200px;
+    margin-top: 0px;
+    margin-bottom: -110px;
+    padding: 0px;
+}
+
+
+/*.container-description styles*/
+
+.container-description {
+    .box {
+        padding: 0 3px;
+    }
+    @media #{$sm} {
+        padding: 20px 120px;
+    }
+    @media #{$md} {
+        padding: 20px 180px;
+    }
+    @media #{$lg} {
+        padding: 20px 180px;
+    }
+}
+
+.container-description .inner-text-div {
+    padding: 25px;
+    margin-bottom: 5px;
+    background-color: #F3F3F4;
+    min-height: 110px;
+    font-size: 1.25em;
+    @media #{$sm} {
+        min-height: 220px;
+        font-size: 1em;
+    }
+    @media #{$md} {
+        min-height: 220px;
+        padding-top: 10px;
+        font-size: 1.125em;
+    }
+    @media #{$lg} {
+        min-height: 190px;
+        font-size: 1.25em;
+        padding-top: 35px;
+    }
+}
+
+.cultureContent {
+    margin: 0px 10px;
+    @media #{$sm} {
+        margin: 0px 80px;
+    }
+    @media #{$md} {
+        margin: 0px 200px;
+    }
+    @media #{$lg} {
+        margin: 0px 300px;
+    }
+}
+
+
+/*.leadership styles*/
+
+.container-leadership {
+    img {
+        margin: 20px auto;
+    }
+    .quote-div {
+        margin: 4px auto 130px;
+    }
+    .btn-blue {
+        margin: 100px auto 25px;
+        font-weight: 100;
+    }
+    .col-sm-2 {
+        min-height: 200px;
+    }
+    .inner-text-div {
+        margin: 4px 100px;
+        padding: 30px 20px 30px 40px;
+        background-color: #F3F3F4;
+        font-size: 1.5em;
+        font-weight: 300;
+        @media #{$xs} {
+            margin: 4px 30px;
+        }
+        p {
+            margin: 5px 0px 5px 60px;
+            min-height: 50px;
+        }
+    }
+}
+
+.wrap {
+    background: #ddd;
+    height: 60px;
+    position: relative;
+}
+
+.circle {
+    border: 2px solid #E64900;
+    border-radius: 50px;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    margin: 10px auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.circle:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #E64900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -5px;
+    bottom: 0;
+    margin: auto;
+}
+
+.imageactive {
+    background-color: #F3F3F4;
+}
+
+.imageInActive {
+    opacity: 0.4;
+}
+
+
+/* company culture session styles*/
+
+.container-culture {
+    background: url("../img/bg2.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 992px;
+    .btn-blue {
+        margin: 140px auto 80px;
+        font-weight: 200;
+    }
+    p {
+        font-size: 1.25em;
+    }
+}
+
+#checkoutbutton {
+    margin: 30px auto 150px;
+}
+
+.footer p {
+    margin: 30px;
+}
+
+
+/* MISD test font*/
+
+.textorange {
+    color: #E64900;
+}
+
+.textunderline {
+    @extend .textorange;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.textblue {
+    color: #006993;
+}
+
+.textbluebold {
+    @extend .textblue;
+    font-weight: bold;
+}
+
+.textbluetitle {
+    @extend .textblue;
+    font-size: 2em;
+    @media #{$xs} {
+        font-size: 1.5em;
+    }
+}
+
+.textbigger {
+    font-size: 1.5em;
+    @media #{$xs} {
+        font-size: 1.5em;
+    }
+}
