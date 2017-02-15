@@ -1,5 +1,6 @@
 # New American Funding (NAF)
 Set up:
+
 1. npm install gulp-cli -g
 
 2. npm install browser-sync --save-dev
